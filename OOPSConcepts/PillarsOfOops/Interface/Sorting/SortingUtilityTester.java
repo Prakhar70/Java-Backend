@@ -7,15 +7,7 @@ public class SortingUtilityTester {
         for(int ele: arr){
             System.out.println(ele);
         }
-        SortingUtility.sort(arr, new Comparater() {
-
-            @Override
-            public boolean compare(int a, int b) {
-                return a>=b;
-            }
-
-
-        });
-
+        SortingUtility.sort(arr, (a,b)->{return a>=b;});
+            
     }
 }
