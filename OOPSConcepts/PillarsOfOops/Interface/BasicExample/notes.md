@@ -1,0 +1,1 @@
+In Java interfaces, abstract methods do not explicitly have an access modifier either, and they are implicitly assumed to be public. All methods in an interface are implicitly public and abstract unless marked otherwise.
