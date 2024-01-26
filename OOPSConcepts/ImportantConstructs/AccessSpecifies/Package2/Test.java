@@ -9,6 +9,7 @@ import OOPSConcepts.ImportantConstructs.AccessSpecifies.Package1.ProtectedC;
 public class Test extends ProtectedC {
     public Test() {
         super();
+        
 
     }
     public void main(String[] args) {

@@ -4,6 +4,7 @@ public class ProtectedC {
 
     protected int e;
     protected int f;
+    
 
     public ProtectedC () {
 
