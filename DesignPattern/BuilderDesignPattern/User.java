@@ -5,7 +5,7 @@ public class User {
     private final String name;
     private final String phoneNumber;
     private final int age;
-    public User(Builder builder){
+    private User(Builder builder){
         this.id= builder.id;
         this.name=builder.name;
         this.phoneNumber=builder.phoneNumber;
@@ -21,11 +21,11 @@ public class User {
             this.id=id;
             this.name=name;
         }
-        public Builder setAge(int age) {
+        public Builder age(int age) {
             this.age = age;
             return this;
         }
-        public Builder setPhoneNumber(String phoneNumber) {
+        public Builder phoneNumber(String phoneNumber) {
             this.phoneNumber = phoneNumber;
             return this;
         }

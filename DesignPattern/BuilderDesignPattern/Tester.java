@@ -8,6 +8,6 @@ public class Tester {
         // builder.setAge(12);
         // builder.setPhoneNumber("12121");
         // new User(builder);
-        User user= new User.Builder(12, "prakhar").setAge(12).setPhoneNumber("1212").build();
+        User user= new User.Builder(12, "prakhar").age(12).phoneNumber("1212").build();
     }
 }
