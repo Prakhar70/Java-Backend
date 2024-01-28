@@ -21,11 +21,16 @@ public class User {
             this.id=id;
             this.name=name;
         }
-        public void setAge(int age) {
+        public Builder setAge(int age) {
             this.age = age;
+            return this;
         }
-        public void setPhoneNumber(String phoneNumber) {
+        public Builder setPhoneNumber(String phoneNumber) {
             this.phoneNumber = phoneNumber;
+            return this;
+        }
+        public User build(){
+            return new User(this);
         }
 
     }
