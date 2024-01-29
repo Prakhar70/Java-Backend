@@ -1,6 +1,6 @@
 package DesignPattern.FatoryDesignPattern.Lec1;
 
-public class CoffeeFactory {
+public class CoffeeFactory implements AbstractCoffeeFactory{
 
     public Coffee getCoffee (String coffeeType){
 

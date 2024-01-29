@@ -1,8 +1,9 @@
 package DesignPattern.FatoryDesignPattern.Lec1;
 
 public class CoffeeServer {
-    private final CoffeeFactory coffeeFactory;
-    public CoffeeServer(CoffeeFactory coffeeFactory){
+    
+    private final AbstractCoffeeFactory coffeeFactory;
+    public CoffeeServer(AbstractCoffeeFactory coffeeFactory){
 
         this.coffeeFactory=coffeeFactory;
     }
