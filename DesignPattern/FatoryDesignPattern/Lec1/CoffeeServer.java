@@ -1,17 +1,13 @@
 package DesignPattern.FatoryDesignPattern.Lec1;
 
 public class CoffeeServer {
+    private final CoffeeFactory coffeeFactory;
+    public CoffeeServer(CoffeeFactory coffeeFactory){
+
+        this.coffeeFactory=coffeeFactory;
+    }
     public void serve(String coffeeType){
-        Coffee coffee = null;
-        if(coffeeType.equals("Expresso")){
-            coffee=new Expresso();
-        }
-        else if(coffeeType.equals("Robusta")){
-            coffee=new Robusta();
-        }
-        else if(coffeeType.equals("Cappucino")){
-            coffee=new Cappucino();
-        }
+        Coffee coffee = coffeeFactory.getCoffee(coffeeType);
         coffee.brew();
         coffee.boil();
     }
